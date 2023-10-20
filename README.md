@@ -23,6 +23,8 @@ Press CTRL+C to quit
 
 
 ## MySQL 
+Install Docker on your laptop. Open Terminal and go to the location where docker-compose.yml file exists.
+
 1. Start the MySQL server
 ```shell
 docker-compose up -d 
@@ -31,12 +33,10 @@ docker-compose up -d
 ```shell
 docker-compose ps 
 ```
-
 3. Check the existing database
 ```shell
 docker exec mysql mysql -u user1 -pS0meVeryHardPassword -e "show databases;"
 ```
-
 4. Run mysql commands 
 ```shell
 docker exec -it mysql /bin/bash
@@ -54,7 +54,7 @@ UserName : root / password
 mysql://root:password@0.0.0.0:3036/classicmodels
 ```
 
-If you have trouble installing `flask-mysqldb` 
+If you are having trouble installing `flask-mysqldb` 
 ```shell
 brew install mysql pkg-config
 ```
